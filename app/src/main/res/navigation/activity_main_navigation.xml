@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ahmetkaya.numberguessinggame.ui.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/guessFragmentTransition"
+            app:destination="@id/guessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessFragment"
+        android:name="com.ahmetkaya.numberguessinggame.ui.fragment.GuessFragment"
+        android:label="fragment_guess"
+        tools:layout="@layout/fragment_guess" >
+        <action
+            android:id="@+id/resultFragmentTransition"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.ahmetkaya.numberguessinggame.ui.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/mainFragmentTransition"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NumberGuessingGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title">Welcome To The Number Guessing Game</string>
+    <string name="title_guess">Find The Number Between 1-100</string>
+    <string name="edit_text">Enter Number!</string>
+    <string name="button_main">START GAME</string>
+    <string name="button_guess">GUESS</string>
+    <string name="button_result">PLAY AGAIN</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
