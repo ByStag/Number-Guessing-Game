@@ -26,4 +26,5 @@ class GuessFragment : Fragment() {
             Navigation.findNavController(it).navigate(R.id.resultFragmentTransition)
         }
     }
+
 }
